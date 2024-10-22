@@ -1,0 +1,109 @@
+/* Sfondo del sito in nero */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Riquadro scoreboard */
+.scoreboard-container {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  max-width: 600px;  /* Limita la larghezza della scoreboard */
+  margin: 0 auto;    /* Centra la scoreboard */
+}
+
+/* Disposizione verticale delle posizioni */
+.position-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  /* Spazio tra le posizioni */
+}
+
+/* Stile delle singole posizioni */
+.position {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;   /* Allinea a sinistra */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1em;  /* Leggermente più grande per il testo */
+}
+
+.position img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* Disposizione numero e immagine del giocatore */
+.position-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Nome del giocatore */
+.position p {
+  margin: 0;
+  font-weight: bold;  /* Grassetto per tutti i nomi */
+}
+
+/* Stile della casella di testo per i punti */
+.points-box {
+  background-color: #444;
+  color: #ffd700;  /* Colore oro per i punti */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 120px;
+  text-align: right;  /* Allinea il testo a destra */
+}
+
+.points-box[disabled] {
+  opacity: 1;
+}
+
+/* Colorazione delle prime tre posizioni */
+.position.gold {
+  background-color: #ffd700;
+  color: black;
+}
+
+.position.gold .points-box {
+  color: black;
+}
+
+.position.silver {
+  background-color: #c0c0c0;
+  color: black;
+}
+
+.position.silver .points-box {
+  color: black;
+}
+
+.position.bronze {
+  background-color: #cd7f32;
+  color: black;
+}
+
+.position.bronze .points-box {
+  color: black;
+}
+
+/* Stile per il footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+footer a img {
+  filter: invert(1);
+}
